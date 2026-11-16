@@ -39,10 +39,16 @@ not copied into documents that would go stale.
 2. **Bump the version** in the one place the package keeps it (`package.json`, `src/kelpgate/_version.py`,
    `KelpgateClient::VERSION`, the plugin header and `readme.txt`, ...), and add a `## X.Y.Z` entry to
    `CHANGELOG.md`. Do both in a pull request, like any other change.
-3. **Tag `main`**: `git tag vX.Y.Z && git push origin vX.Y.Z`.
+3. **The tag is created for you.** When the merge to `main` changes the version, the repository's `auto-tag`
+   workflow creates `vX.Y.Z` and starts the release workflow (a tag pushed with the built-in token does not start
+   workflows by itself, so it starts it explicitly). If you push the tag by hand first, `auto-tag` sees it and does
+   nothing: `git tag vX.Y.Z && git push origin vX.Y.Z`.
 4. **The release workflow checks, then publishes.** It fails early if the tag does not match the package version or
    if the changelog has no entry for it. Then it publishes to the registry and creates a GitHub Release whose notes
    are that changelog entry.
+   The WordPress plugin's workflow also commits `trunk/`, the version tag and the directory assets to the
+   WordPress.org SVN repository. That job needs the `WPORG_SVN_USERNAME` and `WPORG_SVN_PASSWORD` secrets in the
+   repository's `wordpress-org` environment; add required reviewers there to approve each directory release.
 5. **Verify the registry** (the new version is listed, with the right author and repository links) and test an
    install from a clean directory.
 

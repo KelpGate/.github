@@ -24,8 +24,8 @@ covers version numbers, where each package is published, and how a release is ma
 |---|---|---|---|
 | Node.js client `@kelpgate/client` | [kelpgate-node](https://github.com/KelpGate/kelpgate-node) | npm | Tag `v*`; the Publish workflow tests, then runs `npm publish` with provenance |
 | Python client `kelpgate-client` | [kelpgate-python](https://github.com/KelpGate/kelpgate-python) | PyPI | Tag `v*`; the Publish workflow builds and uploads through PyPI trusted publishing (no stored token) |
-| PHP client `kelpgate/kelpgate-php` | [kelpgate-php](https://github.com/KelpGate/kelpgate-php) | Packagist | Tag `v*`; Packagist reads the tag through its GitHub hook |
-| WordPress plugin | [kelpgate-wordpress](https://github.com/KelpGate/kelpgate-wordpress) | WordPress.org | Tag `v*` builds the zip and a GitHub Release; the directory copy is updated through WordPress.org after review |
+| PHP client `kelpgate/client` | [kelpgate-php](https://github.com/KelpGate/kelpgate-php) | Packagist | Tag `v*`; Packagist reads the tag through its GitHub hook |
+| WordPress plugin | [kelpgate-wordpress](https://github.com/KelpGate/kelpgate-wordpress) | WordPress.org (https://wordpress.org/plugins/kelpgate-malware-scanner/) | Tag `v*` builds the zip and a GitHub Release; the directory copy is updated by committing `trunk/` and `tags/<version>/` to the WordPress.org SVN repository |
 | Drupal module | [kelpgate-drupal](https://github.com/KelpGate/kelpgate-drupal) | Drupal.org | Released from the Drupal.org project page |
 | API service | `KelpGate/kelpgate` (private) | ghcr.io image | Every merge to `main` builds and deploys; a tag names a release |
 | Console | `KelpGate/kelpgate-console` (private) | ghcr.io image | Same as the service |

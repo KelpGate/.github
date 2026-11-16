@@ -13,7 +13,7 @@ and the **error suffix** (`...Error` in Node and Python, `...Exception` in PHP, 
 |---|---|---|
 | Node.js | `@kelpgate/client` | `KelpgateClient` |
 | Python | `kelpgate-client` (import `kelpgate`) | `KelpgateClient`, `AsyncKelpgateClient` |
-| PHP | `kelpgate/kelpgate-php` | `Kelpgate\KelpgateClient` |
+| PHP | `kelpgate/client` | `Kelpgate\KelpgateClient` |
 | WordPress | `kelpgate-malware-scanner` | Kelpgate Malware Scanner for WordPress |
 | Drupal | `kelpgate` | Kelpgate Malware Scanner for Drupal |
 

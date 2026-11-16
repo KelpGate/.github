@@ -4,11 +4,11 @@ Malware scanning for the files your application accepts. One API call checks an 
 
 | Project | What it is |
 | --- | --- |
-| [kelpgate-wordpress](https://github.com/KelpGate/kelpgate-wordpress) | Kelpgate Malware Scanner for WordPress: scans uploads and blocks infected files |
+| [kelpgate-wordpress](https://github.com/KelpGate/kelpgate-wordpress) | Kelpgate Malware Scanner for WordPress: scans uploads and blocks infected files ([WordPress.org](https://wordpress.org/plugins/kelpgate-malware-scanner/)) |
 | [kelpgate-drupal](https://github.com/KelpGate/kelpgate-drupal) | Kelpgate Malware Scanner for Drupal: scans uploads through file validation |
 | [kelpgate-node](https://github.com/KelpGate/kelpgate-node) | Kelpgate Client for Node.js (`@kelpgate/client`): library, CLI and Express middleware |
 | [kelpgate-python](https://github.com/KelpGate/kelpgate-python) | Kelpgate Client for Python (`kelpgate-client`): sync and async library, CLI, FastAPI and Django helpers |
-| [kelpgate-php](https://github.com/KelpGate/kelpgate-php) | Kelpgate Client for PHP (`kelpgate/kelpgate-php`): library with a pluggable HTTP transport and token cache, for Laravel, Symfony and plain PHP |
+| [kelpgate-php](https://github.com/KelpGate/kelpgate-php) | Kelpgate Client for PHP (`kelpgate/client`): library with a pluggable HTTP transport and token cache, for Laravel, Symfony and plain PHP |
 
 Every client uses the same names for the same things ([client standard](https://github.com/KelpGate/.github/blob/main/docs/client-standard.md)) and every repository follows the same version and release rules ([versioning and releases](https://github.com/KelpGate/.github/blob/main/docs/versioning-and-releases.md)).
 

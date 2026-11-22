@@ -1,6 +1,6 @@
 # Security policy
 
-Kelpgate scans files for malware, so we treat reports about our own software seriously.
+This policy applies to every repository in the Kelpgate organization and to the hosted Kelpgate service.
 
 ## Reporting a vulnerability
 
@@ -12,7 +12,7 @@ You can also email **security@kelpgate.cloud**. Please keep exploit details to w
 
 Include what you can:
 
-- the repository and version (plugin, module or package version, plus WordPress, Drupal or Node version)
+- the repository and version (package, plugin or module version, and the runtime: Node.js, Python, PHP, WordPress or Drupal)
 - steps to reproduce, or a proof of concept
 - the impact you expect
 
@@ -32,7 +32,7 @@ We fix security issues in the latest release of each project. Older releases are
 
 ## Scope
 
-In scope: the Kelpgate WordPress plugin, the Drupal module, the Node client (`@kelpgate/client`) and the code in this organization's repositories.
+In scope: the client libraries for Node.js (`@kelpgate/client`), Python (`kelpgate-client`) and PHP (`kelpgate/client`), the WordPress plugin, the Drupal module, and all other code in this organization's repositories.
 
 For the hosted Kelpgate service (API, console), report through the same private channel and mark the report as service-related.
 

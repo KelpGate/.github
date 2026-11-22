@@ -1,14 +1,14 @@
 # Kelpgate
 
-Malware scanning for the files your application accepts. One API call checks an upload or a URL against multiple engines and returns a verdict, so infected files never reach your storage.
+Malware scanning for files accepted by web applications. The Kelpgate API scans an upload or a URL with multiple engines and returns a single verdict before the file is stored.
 
 | Project | What it is |
 | --- | --- |
 | [kelpgate-wordpress](https://github.com/KelpGate/kelpgate-wordpress) | Kelpgate Malware Scanner for WordPress: scans uploads and blocks infected files ([WordPress.org](https://wordpress.org/plugins/kelpgate-malware-scanner/)) |
-| [kelpgate-drupal](https://github.com/KelpGate/kelpgate-drupal) | Kelpgate Malware Scanner for Drupal: scans uploads through file validation |
+| [kelpgate-drupal](https://github.com/KelpGate/kelpgate-drupal) | Kelpgate Malware Scanner for Drupal: scans uploads through file validation (Drupal 9.5 and 10) |
 | [kelpgate-node](https://github.com/KelpGate/kelpgate-node) | Kelpgate Client for Node.js (`@kelpgate/client`): library, CLI and Express middleware |
 | [kelpgate-python](https://github.com/KelpGate/kelpgate-python) | Kelpgate Client for Python (`kelpgate-client`): sync and async library, CLI, FastAPI and Django helpers |
-| [kelpgate-php](https://github.com/KelpGate/kelpgate-php) | Kelpgate Client for PHP (`kelpgate/client`): library with a pluggable HTTP transport and token cache, for Laravel, Symfony and plain PHP |
+| [kelpgate-php](https://github.com/KelpGate/kelpgate-php) | Kelpgate Client for PHP (`kelpgate/client`, installed from GitHub): library with a pluggable HTTP transport and token cache |
 
 Every client uses the same names for the same things ([client standard](https://github.com/KelpGate/.github/blob/main/docs/client-standard.md)) and every repository follows the same version and release rules ([versioning and releases](https://github.com/KelpGate/.github/blob/main/docs/versioning-and-releases.md)).
 

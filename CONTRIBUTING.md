@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping. This guide applies to every repository in the Kelpgate organization unless a repository says otherwise.
+This guide applies to every repository in the Kelpgate organization unless a repository says otherwise.
 
 ## Ways to contribute
 
@@ -19,6 +19,10 @@ Thanks for helping. This guide applies to every repository in the Kelpgate organ
 
 A maintainer reviews every pull request. We may ask for changes or decline a change that does not fit the project; we will explain why.
 
+## Client standard
+
+New clients, plugins and modules, and changes to existing ones, follow the [Kelpgate client standard](docs/client-standard.md): the same operation, error and setting names in every language.
+
 ## Commits
 
 Write a short imperative subject ("Fix token refresh on 401"), with detail in the body when it helps. Sign your work with a `Signed-off-by` line (`git commit -s`) to confirm you have the right to submit it under the project's license (the [Developer Certificate of Origin](https://developercertificate.org/)).
@@ -30,8 +34,6 @@ Contributions are accepted under the license of the repository you contribute to
 ## Conduct
 
 Everyone taking part is expected to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
-
-New clients, plugins and modules, and changes to existing ones, follow the [Kelpgate client standard](docs/client-standard.md): the same operation, error and setting names in every language.
 
 ## Branches, pull requests and releases
 
